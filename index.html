@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+	<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<meta name="keywords" content="" />
+
+		<title>Nuoreact | Documentation by Jithinlal</title>
+
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="fonts/font-awesome-4.3.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/stroke.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="js/syntax-highlighter/styles/shCore.css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="js/syntax-highlighter/styles/shThemeRDark.css"
+			media="all"
+		/>
+
+		<!-- CUSTOM -->
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div class="container">
+				<section id="top" class="section docs-heading">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="big-title text-center">
+								<h1>Nuoreact</h1>
+								<p class="lead">
+									A neumorphism inspired react component library
+								</p>
+							</div>
+							<!-- end title -->
+						</div>
+						<!-- end 12 -->
+					</div>
+					<!-- end row -->
+
+					<hr />
+				</section>
+				<!-- end section -->
+
+				<div class="row">
+					<div class="col-md-3">
+						<nav
+							class="docs-sidebar"
+							data-spy="affix"
+							data-offset-top="300"
+							data-offset-bottom="200"
+							role="navigation"
+						>
+							<ul class="nav">
+								<li><a href="#line1">Installation</a></li>
+								<li>
+									<a href="#line2">Components</a>
+									<ul class="nav">
+										<li><a href="#line7_1">Container</a></li>
+										<li><a href="#line7_2">Button</a></li>
+										<li><a href="#line7_3">Round Button</a></li>
+										<li><a href="#line7_4">Button Group</a></li>
+										<li><a href="#line7_5">Switch</a></li>
+									</ul>
+								</li>
+								<li><a href="#line3">Links</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-9">
+						<section class="welcome">
+							<div class="row">
+								<div class="col-md-12 left-align">
+									<h2 class="dark-text">
+										Introduction
+										<hr />
+									</h2>
+									<div class="row">
+										<div class="col-md-12 full">
+											<hr />
+											<div>
+												<p>
+													First of all, Thank you so much for trying out this
+													small react component library.
+													<strong>You are awesome!</strong>
+													<br />
+													You can use this in your existing project, and raise
+													an issue on the github page
+													<a
+														href="https://github.com/jithinlal/react-nuomorph/issues"
+														target="_blank"
+														>here</a
+													>.
+												</p>
+
+												<p>
+													<strong>NUOREACT</strong> is a react component library
+													that inspires from the idea of neumorphism. Learn more
+													about neumorphism from this blog right
+													<a
+														href="https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6"
+														target="_blank"
+														>here</a
+													>. And check out the
+													<a
+														href="https://neumorphism.io/#55b9f3"
+														target="_blank"
+														>webiste</a
+													>
+													that helps you choose the right color combination to
+													include in your next awesome project.
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- end row -->
+								</div>
+							</div>
+						</section>
+
+						<section id="line1" class="section">
+							<div class="row">
+								<div class="col-md-12 left-align">
+									<h2 class="dark-text">
+										Installation <a href="#top">#back to top</a>
+										<hr />
+									</h2>
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+
+							<div class="row">
+								<div class="col-md-12">
+									<p>
+										You can simply install <strong>nuoreact</strong> from npm
+										using command line given below:
+									</p>
+
+									<h4>Bootstrap Grid System</h4>
+
+									<pre class="brush: html;">
+                            npm install nuoreact --save
+                        </pre
+									>
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+						</section>
+						<!-- end section -->
+
+						<section id="line2" class="section">
+							<div class="row">
+								<div class="col-md-12 left-align">
+									<h2 class="dark-text">
+										Components <a href="#top">#back to top</a>
+										<hr />
+									</h2>
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+
+							<div class="row">
+								<div class="col-md-4">
+									<a href="#line2"
+										><img
+											src="images/container.png"
+											alt=""
+											class="img-responsive img-thumbnail"
+									/></a>
+								</div>
+
+								<div class="col-md-8">
+									<h4 id="line7_1">
+										Container - <a href="#top">#back to top</a>
+									</h4>
+									<p>
+										A container based on neumorphism. It has the following
+										properties.
+									</p>
+									<ol>
+										<li>
+											<strong>type</strong> - Either 'flat', 'convex', 'concave'
+											or 'pressed'. Please refer over
+											<a href="https://neumorphism.io/#55b9f3" target="_blank"
+												>here</a
+											>
+											for what they each mean in more details.
+										</li>
+										<li>
+											<strong>borderRadius</strong> - The border radius of your
+											container.
+										</li>
+										<li>
+											<strong>blurStrength</strong> - The blur strength of the
+											container.
+										</li>
+										<li>
+											<strong>backgroundColor</strong> - The background colour
+											of your container, make sure that this is the same as the
+											one below it, for maximum neumorphism effect.
+										</li>
+										<li>
+											<strong>width</strong> - The width of the container.
+										</li>
+										<li>
+											<strong>height</strong> - The height of the container.
+										</li>
+										<li>
+											<strong>distance</strong> - The distance to which the
+											shadow extends.
+										</li>
+										<li>
+											<strong>innerElementAlignItems</strong> - Controls the
+											alignment of the top level tag of the children included in
+											the container.
+										</li>
+										<li>
+											<strong>innerElementJustifyContent</strong> - Just like
+											innerElementAlignItems, this deals with the top level tag,
+											but the justifyContent property instead.
+										</li>
+										<li>
+											<strong>innerShadowPosition</strong> - Controls the
+											position of the inner shadow of the container. This can be
+											either the 4 mentioned below:
+											<ol>
+												<li><strong>lt</strong> - Left Top</li>
+												<li><strong>lb</strong> - Left Bottom</li>
+												<li><strong>rt</strong> - Right Top</li>
+												<li><strong>rb</strong> - Right Bottom</li>
+											</ol>
+										</li>
+										<li>
+											<strong>outerShadowPosition</strong> - Similar to the
+											inner shadow position but deals with the outer area.
+										</li>
+										<li>
+											<strong>innerElementPadding</strong> - The padding that
+											gives to the inner children
+										</li>
+									</ol>
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+
+							<hr />
+
+							<div class="row">
+								<div class="col-md-4">
+									<a href="#line2"
+										><img
+											src="images/button.png"
+											alt=""
+											class="img-responsive img-thumbnail"
+									/></a>
+								</div>
+
+								<div class="col-md-8">
+									<h4 id="line7_2">Button - <a href="#top">#back to top</a></h4>
+									<p>
+										Button that toggle between either pressed state or bubbly
+										state.
+									</p>
+									<ol>
+										<li>
+											<strong>type</strong> - Same as above, but it is
+											recommended to keep it the default of 'convex', since on
+											click the type changes between either 'convex' or
+											'concave', with respect to click
+										</li>
+										<li>
+											<strong>borderRadius</strong> - The border radius of your
+											button.
+										</li>
+										<li>
+											<strong>blurStrength</strong> - The blur strength of the
+											button.
+										</li>
+										<li>
+											<strong>backgroundColor</strong> - The background colour
+											of your button, make sure that this is the same as the one
+											below it, for maximum neumorphism effect.
+										</li>
+										<li><strong>width</strong> - The width of the button.</li>
+										<li><strong>height</strong> - The height of the button.</li>
+										<li>
+											<strong>distance</strong> - The distance to which the
+											shadow extends.
+										</li>
+										<li>
+											<strong>innerElementAlignItems</strong> - Controls the
+											alignment of the top level tag of the children included in
+											the button.
+										</li>
+										<li>
+											<strong>innerElementJustifyContent</strong> - Just like
+											innerElementAlignItems, this deals with the top level tag,
+											but the justifyContent property instead.
+										</li>
+										<li>
+											<strong>innerShadowPosition</strong> - Controls the
+											position of the inner shadow of the button. This can be
+											either the 4 mentioned below:
+											<ol>
+												<li><strong>lt</strong> - Left Top</li>
+												<li><strong>lb</strong> - Left Bottom</li>
+												<li><strong>rt</strong> - Right Top</li>
+												<li><strong>rb</strong> - Right Bottom</li>
+											</ol>
+										</li>
+										<li>
+											<strong>outerShadowPosition</strong> - Similar to the
+											inner shadow position but deals with the outer area.
+										</li>
+										<li>
+											<strong>innerElementPadding</strong> - The padding that
+											gives to the inner children.
+										</li>
+										<li>
+											<strong>onClickFunc</strong> - A method that executes when
+											the button is clicked.
+										</li>
+									</ol>
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+
+							<hr />
+
+							<div class="row">
+								<div class="col-md-4">
+									<a href="#line2"
+										><img
+											src="images/round-button.png"
+											alt=""
+											class="img-responsive img-thumbnail"
+									/></a>
+								</div>
+
+								<div class="col-md-8">
+									<h4 id="line7_3">
+										Round Button - <a href="#top">#back to top</a>
+									</h4>
+									<p>
+										A round button made with neumorphism.
+									</p>
+									<ol>
+										<li>
+											<strong>type</strong> - Same as above, but it is
+											recommended to keep it the default of 'convex', since on
+											click the type changes between either 'convex' or
+											'concave', with respect to click
+										</li>
+										<li>
+											<strong>radius</strong> - The radius of your button.
+										</li>
+										<li>
+											<strong>blurStrength</strong> - The blur strength of the
+											button.
+										</li>
+										<li>
+											<strong>backgroundColor</strong> - The background colour
+											of your button, make sure that this is the same as the one
+											below it, for maximum neumorphism effect.
+										</li>
+										<li>
+											<strong>innerElementAlignItems</strong> - Controls the
+											alignment of the top level tag of the children included in
+											the button.
+										</li>
+										<li>
+											<strong>innerElementJustifyContent</strong> - Just like
+											innerElementAlignItems, this deals with the top level tag,
+											but the justifyContent property instead.
+										</li>
+										<li>
+											<strong>innerShadowPosition</strong> - Controls the
+											position of the inner shadow of the button. This can be
+											either the 4 mentioned below:
+											<ol>
+												<li><strong>lt</strong> - Left Top</li>
+												<li><strong>lb</strong> - Left Bottom</li>
+												<li><strong>rt</strong> - Right Top</li>
+												<li><strong>rb</strong> - Right Bottom</li>
+											</ol>
+										</li>
+										<li>
+											<strong>outerShadowPosition</strong> - Similar to the
+											inner shadow position but deals with the outer area.
+										</li>
+										<li>
+											<strong>innerElementPadding</strong> - The padding that
+											gives to the inner children.
+										</li>
+										<li>
+											<strong>onClickFunc</strong> - A method that executes when
+											the button is clicked.
+										</li>
+									</ol>
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+
+							<hr />
+
+							<div class="row">
+								<div class="col-md-4">
+									<a href="#line2"
+										><img
+											src="images/button-group.png"
+											alt=""
+											class="img-responsive img-thumbnail"
+									/></a>
+								</div>
+
+								<div class="col-md-8">
+									<h4 id="line7_4">
+										Button Group - <a href="#top">#back to top</a>
+									</h4>
+									<p>
+										Contains 3 button group that combines the magic of
+										neumorphism into one.
+									</p>
+									<ol>
+										<li>
+											<strong>type</strong> - Same as above, but it is
+											recommended to keep it the default of 'convex', since on
+											click the type changes between either 'convex' or
+											'concave', with respect to click
+										</li>
+										<li>
+											<strong>borderRadius</strong> - The radius of your button
+											group.
+										</li>
+										<li>
+											<strong>blurStrength</strong> - The blur strength of the
+											button group.
+										</li>
+										<li>
+											<strong>backgroundColor</strong> - The background colour
+											of your button group, make sure that this is the same as
+											the one below it, for maximum neumorphism effect.
+										</li>
+										<li>
+											<strong>width</strong> - The width of each of the buttons
+											in the button group
+										</li>
+										<li>
+											<strong>height</strong> - The height of each of the
+											buttons in the button group
+										</li>
+										<li><strong>distance</strong> - Distance of the shadow.</li>
+										<li>
+											<strong>innerElementAlignItems</strong> - Controls the
+											alignment of the top level tag of the children included in
+											the button group.
+										</li>
+										<li>
+											<strong>innerElementJustifyContent</strong> - Just like
+											innerElementAlignItems, this deals with the top level tag,
+											but the justifyContent property instead.
+										</li>
+										<li>
+											<strong>innerShadowPosition</strong> - Controls the
+											position of the inner shadow of the button group. This can
+											be either the 4 mentioned below:
+											<ol>
+												<li><strong>lt</strong> - Left Top</li>
+												<li><strong>lb</strong> - Left Bottom</li>
+												<li><strong>rt</strong> - Right Top</li>
+												<li><strong>rb</strong> - Right Bottom</li>
+											</ol>
+										</li>
+										<li>
+											<strong>outerShadowPosition</strong> - Similar to the
+											inner shadow position but deals with the outer area.
+										</li>
+										<li>
+											<strong>innerElementPadding</strong> - The padding that
+											gives to the inner children.
+										</li>
+										<li>
+											<strong>firstButton</strong> - The component that is
+											inscribed in the first button in the button group.
+										</li>
+										<li>
+											<strong>secondButton</strong> - The component that is
+											inscribed in the second button in the button group.
+										</li>
+										<li>
+											<strong>thirdButton</strong> - The component that is
+											inscribed in the third button in the button group.
+										</li>
+										<li>
+											<strong>onClickFunc</strong> - A method that executes when
+											one of the button is clicked.
+										</li>
+									</ol>
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+
+							<hr />
+
+							<div class="row">
+								<div class="col-md-4">
+									<a href="#line2"
+										><img
+											src="images/switch.png"
+											alt=""
+											class="img-responsive img-thumbnail"
+									/></a>
+								</div>
+
+								<div class="col-md-8">
+									<h4 id="line7_5">Switch - <a href="#top">#back to top</a></h4>
+									<p>
+										Switch that embraces the beauty of neumorphism in whole.
+									</p>
+									<ol>
+										<li>
+											<strong>isOn</strong> - Indicates whether the switch is on
+											or off.
+										</li>
+										<li>
+											<strong>handleToggle</strong> - The method that executes
+											upon switching.
+										</li>
+										<li>
+											<strong>blurStrength</strong> - The blur strength of the
+											radio button.
+										</li>
+										<li>
+											<strong>borderRadius</strong> - The border radius of the
+											radio button.
+										</li>
+										<li>
+											<strong>backgroundColor</strong> - The background colour
+											of your button, make sure that this is the same as the one
+											below it, for maximum neumorphism effect.
+										</li>
+										<li><strong>distance</strong> - Distance of the shadow.</li>
+										<li>
+											<strong>width</strong> - The width of the radio button.
+										</li>
+										<li>
+											<strong>height</strong> - The height of the radio button.
+										</li>
+										<li>
+											<strong>innerShadowPosition</strong> - Controls the
+											position of the inner shadow of the radio button. This can
+											be either the 4 mentioned below:
+											<ol>
+												<li><strong>lt</strong> - Left Top</li>
+												<li><strong>lb</strong> - Left Bottom</li>
+												<li><strong>rt</strong> - Right Top</li>
+												<li><strong>rb</strong> - Right Bottom</li>
+											</ol>
+										</li>
+										<li>
+											<strong>outerShadowPosition</strong> - Similar to the
+											inner shadow position but deals with the outer area.
+										</li>
+									</ol>
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+
+							<hr />
+						</section>
+						<!-- end section -->
+
+						<section id="line3" class="section">
+							<div class="row">
+								<div class="col-md-12 left-align">
+									<h2 class="dark-text">
+										Links <a href="#top">#back to top</a>
+										<hr />
+									</h2>
+								</div>
+								<!-- end col -->
+							</div>
+							<!-- end row -->
+
+							<div class="row">
+								<div class="col-md-6">
+									<p>
+										please check out the following links for more info:
+									</p>
+
+									<p>
+										Please visit my
+										<a href="https://github.com/jithinlal/react-nuomorph"
+											><strong>github repo</strong></a
+										>
+										or submit an issue
+										<a href="https://github.com/jithinlal/react-nuomorph/issues"
+											>here</a
+										>
+									</p>
+
+									<strong
+										>Check out the npm package over
+										<a href="https://www.npmjs.com/package/nuoreact"
+											>here</a
+										></strong
+									>
+								</div>
+
+								<div class="col-md-6">
+									<strong>Don't hesitate to submit pull requests.</strong>
+								</div>
+							</div>
+							<!-- end row -->
+						</section>
+						<!-- end section -->
+					</div>
+					<!-- // end .col -->
+				</div>
+				<!-- // end .row -->
+			</div>
+			<!-- // end container -->
+		</div>
+		<!-- end wrapper -->
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/retina.js"></script>
+		<script src="js/jquery.fitvids.js"></script>
+		<script src="js/wow.js"></script>
+		<script src="js/jquery.prettyPhoto.js"></script>
+
+		<!-- CUSTOM PLUGINS -->
+		<script src="js/custom.js"></script>
+		<script src="js/main.js"></script>
+
+		<script src="js/syntax-highlighter/scripts/shCore.js"></script>
+		<script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+		<script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+		<script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+	</body>
+</html>
